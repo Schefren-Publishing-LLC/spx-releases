@@ -1,3 +1,3 @@
-# iap — releases
+# SPX CLI Releases
 
-Public distribution point for the `iap` command-line tool.
+Public distribution point for the `spx` command-line tool. (binaries, checksums, installer)
