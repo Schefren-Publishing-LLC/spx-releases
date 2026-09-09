@@ -37,15 +37,19 @@ Follow these steps in order. Stop and ask the user only where marked.
 
    Never download the binary from anywhere else or build it yourself.
 2. **PATH.** `~/.local/bin` is usually not on PATH in a fresh account. Use
-   the absolute path `~/.local/bin/spx` for the rest of this session, and
-   add the line the installer printed to the user's shell profile (tell the
-   user you did).
+   the absolute path `~/.local/bin/spx` for the rest of this session. If the
+   installer printed a "not on your PATH" note, add the line it gave to the
+   user's shell profile and tell the user you did; if it said "on PATH", do
+   nothing.
 3. **Read the skill you just installed** (`~/.local/bin/spx setup` printed
    its path) and follow it from now on — do not wait for a new session.
-4. **Sign in — the USER does this.** Run `~/.local/bin/spx auth login`. It
-   prints a URL and a short code; show both to the user and wait. The
-   command exits by itself once they approve in the browser. Never try to
-   sign in for them.
+4. **Sign in — the USER does this.** Run `~/.local/bin/spx auth login` in
+   the background (it blocks until approved, up to 15 minutes) and capture
+   its output. It prints a URL and a short code and also opens the user's
+   browser on the approval page; show the URL and code to the user, tell
+   them to sign in with their work email and approve, and wait. The command
+   exits by itself once they approve. Never try to sign in for them. If the
+   code expires, run it again for a fresh code.
 5. **Check access.** `~/.local/bin/spx skills list`. The user's skills
    appear (e.g. `zmos`). An empty list means no entitlement yet — tell the
    user to contact their administrator with the email shown by
