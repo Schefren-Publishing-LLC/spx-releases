@@ -80,6 +80,6 @@ Windows: download `spx_windows_amd64.zip` from the release page, put
 | `checksums.txt` | SHA-256 of every asset; the installer and the self-updater verify against it |
 | `install.sh` | the installer above |
 
-`spx` updates itself silently once a day (`spx update --auto off` to stop).
+`spx` updates itself silently: once a day, and whenever a session resumes a run (`spx update --auto off` to stop).
 
 Source code lives in a private repository; only releases are public.
