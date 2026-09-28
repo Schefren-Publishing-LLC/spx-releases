@@ -5,21 +5,6 @@ delivery of managed skills (courses and workflows) to your local AI agent.
 The agent does the work on your machine; `spx` fetches and verifies the
 guidance one step at a time.
 
-## Testers: start here
-
-You need a Mac or Linux machine with [Claude Code](https://claude.com/claude-code)
-installed. Nothing else. Open Claude Code in an empty folder for the course
-and paste this:
-
-> Install the spx CLI from https://github.com/Schefren-Publishing-LLC/spx-releases
-> (follow the README there), sign me in, and start the ZenithMind OS course
-> (skill `zmos`) in this folder.
-
-Claude will install the tool, ask you to approve a sign-in code in your
-browser, and then begin Module 1. Sign in with your work email — that is what
-your course access is attached to. To come back later, open Claude Code in
-the same folder and say "continue my ZMOS course".
-
 ## For agents (Claude Code, Codex, …)
 
 Follow these steps in order. Stop and ask the user only where marked.
