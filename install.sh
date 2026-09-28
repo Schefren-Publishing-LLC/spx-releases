@@ -2,7 +2,7 @@
 set -eu
 
 REPO="${SPX_REPO:-Schefren-Publishing-LLC/spx-releases}"
-ENV_NAME="${SPX_ENV:-staging}"
+ENV_NAME="${SPX_ENV:-production}"
 INSTALL_DIR="${SPX_INSTALL_DIR:-$HOME/.local/bin}"
 VERSION="${SPX_VERSION:-latest}"
 

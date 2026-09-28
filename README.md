@@ -11,7 +11,7 @@ Follow these steps in order. Stop and ask the user only where marked.
 
 1. **Install.** Run the installer. It downloads the release for this
    OS/arch, verifies its SHA-256 against `checksums.txt`, installs `spx` to
-   `~/.local/bin`, and runs `spx setup --env staging`, which writes the
+   `~/.local/bin`, and runs `spx setup --env production`, which writes the
    config (server + trust root) and installs the bootstrap skill for this
    agent at `~/.claude/skills/spx/SKILL.md` (Claude Code) or
    `~/.codex/skills/spx/SKILL.md` (Codex, add `-s -- --agent codex`).
@@ -49,13 +49,13 @@ Follow these steps in order. Stop and ask the user only where marked.
 curl -fsSL https://github.com/Schefren-Publishing-LLC/spx-releases/releases/latest/download/install.sh | sh
 ```
 
-Knobs: `SPX_ENV` (`staging`, default, or `production`), `SPX_INSTALL_DIR`
+Knobs: `SPX_ENV` (`production`, default, or `staging`), `SPX_INSTALL_DIR`
 (default `~/.local/bin`), `SPX_VERSION` (a tag, default `latest`). Pass
 installer arguments after `sh -s --`, e.g. `sh -s -- --agent codex` or
 `sh -s -- --agent none`.
 
 Windows: download `spx_windows_amd64.zip` from the release page, put
-`spx.exe` on your PATH, and run `spx setup --env staging`.
+`spx.exe` on your PATH, and run `spx setup --env production`.
 
 ## What is in a release
 
