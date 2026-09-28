@@ -49,8 +49,7 @@ Follow these steps in order. Stop and ask the user only where marked.
 curl -fsSL https://github.com/Schefren-Publishing-LLC/spx-releases/releases/latest/download/install.sh | sh
 ```
 
-Knobs: `SPX_ENV` (`production`, default, or `staging`), `SPX_INSTALL_DIR`
-(default `~/.local/bin`), `SPX_VERSION` (a tag, default `latest`). Pass
+Knobs: `SPX_INSTALL_DIR` (default `~/.local/bin`), `SPX_VERSION` (a tag, default `latest`). Pass
 installer arguments after `sh -s --`, e.g. `sh -s -- --agent codex` or
 `sh -s -- --agent none`.
 
