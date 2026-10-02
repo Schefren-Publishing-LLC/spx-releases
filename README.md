@@ -50,8 +50,10 @@ curl -fsSL https://github.com/Schefren-Publishing-LLC/spx-releases/releases/late
 ```
 
 Knobs: `SPX_INSTALL_DIR` (default `~/.local/bin`), `SPX_VERSION` (a tag, default `latest`). Pass
-installer arguments after `sh -s --`, e.g. `sh -s -- --agent codex` or
-`sh -s -- --agent none`.
+installer arguments after `sh -s --`, e.g. `sh -s -- --agent codex`,
+`sh -s -- --agent none`, or `sh -s -- --telemetry on|off` to record your
+usage-stats choice up front (`spx telemetry disclosure` lists exactly what is
+sent; `spx telemetry status` shows the current setting).
 
 Windows: download `spx_windows_amd64.zip` from the release page, put
 `spx.exe` on your PATH, and run `spx setup --env production`.
